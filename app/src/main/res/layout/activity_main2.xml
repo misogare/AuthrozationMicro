@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/base_background"
+    tools:context=".MainActivity2">
+
+    <androidx.fragment.app.FragmentContainerView
+        android:id="@+id/mago"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="80dp"
+        app:layout_constraintBottom_toTopOf="@id/fragment_container_pp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"></androidx.fragment.app.FragmentContainerView>
+    <!--    &lt;!&ndash; Define your icons here, customize their positions, and add click listeners &ndash;&gt;-->
+    <FrameLayout
+        android:id="@+id/fragment_container_pp"
+        android:layout_width="345dp"
+        android:layout_height="62dp"
+        android:layout_marginBottom="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <LinearLayout
+        android:id="@+id/bottomIcons"
+        android:layout_width="345dp"
+        android:layout_height="62dp"
+        android:background="@drawable/actionbar"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="@id/fragment_container_pp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+
+        >
+
+        <!-- Icon 1 -->
+        <ImageView
+            android:id="@+id/icon1"
+            android:layout_width="20dp"
+            android:layout_height="50dp"
+            android:layout_marginEnd="20dp"
+            android:layout_weight="1"
+            android:clickable="true"
+            android:paddingTop="15dp"
+            android:src="@drawable/icon1" />
+
+        <!-- Icon 2 -->
+        <ImageView
+            android:id="@+id/icon2"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_marginEnd="20dp"
+            android:layout_weight="1"
+            android:clickable="true"
+            android:paddingTop="15dp"
+            android:src="@drawable/icon5" />
+
+        <ImageView
+            android:id="@+id/icon3"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_marginEnd="20dp"
+            android:layout_weight="1"
+            android:clickable="true"
+            android:paddingTop="15dp"
+            android:src="@drawable/icon3" />
+
+        <ImageView
+            android:id="@+id/icon4"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_marginEnd="20dp"
+            android:layout_weight="1"
+            android:clickable="true"
+            android:paddingTop="15dp"
+            android:src="@drawable/icon4" />
+
+        <!-- Add more icons as needed -->
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
