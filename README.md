@@ -1,4 +1,3 @@
-
 Authorization Microservice
 This repository contains an Android application that incorporates an authentication and authorization microservice. The application is designed to provide a user-friendly interface for user login, password reset, and related functionalities. Below, you will find information on how to use this microservice and the associated Android application.
 
